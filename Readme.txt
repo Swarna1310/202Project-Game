@@ -1,10 +1,3 @@
-github link :
-
-https://github.com/Swarna1310/202Project­Game
-
-waffle io board link :
-
-https://waffle.io/Swarna1310/202Project-Game
 
 Design patterns
 
@@ -48,3 +41,9 @@ as hand positions, finger positions, and gestures being performed. Leap Motion A
 functionality for certain gestures, returning a list of any recognized gestures on a given
 onFrame(). The commonly used gestures that Leap supports are swipes, taps, and circle gestures.
 This data is then handed off to the JavaFX threads for the interface to “react” to.
+
+leap-ue4
+An event-driven Leap Motion plugin for the Unreal Engine 4.
+
+We can use convenience blueprints to just select and play or use a custom approach via blueprints or C++.
+Possible to extend functionality to any blueprint through adding the LeapInterfaceEvent interface then adding the LeapController component to that blueprint. This same architecture is available to C++, which also supports both event-driven and polling style use.
