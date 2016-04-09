@@ -48,3 +48,7 @@ as hand positions, finger positions, and gestures being performed. Leap Motion A
 functionality for certain gestures, returning a list of any recognized gestures on a given
 onFrame(). The commonly used gestures that Leap supports are swipes, taps, and circle gestures.
 This data is then handed off to the JavaFX threads for the interface to “react” to.
+
+
+Research about Unity Engine and view games developed using Unity game engine for reference purposes.
+Unity is a cross-platform engine which can be used to develop games for mobiles, PCs, tablets and more.
