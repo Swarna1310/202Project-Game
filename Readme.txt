@@ -29,3 +29,8 @@ Roshni ­ Feedback
 Shubhra­ Respect
 
 Aditya­ Courage
+
+## Research on Kinect API and Greenfoot platforms for Game development (Issue 2)
+There are a number of kinect APIs available for game development in many languages.
+The J4K Library created atUniversityof Florida seems to be a great library available
+for use with Java.
