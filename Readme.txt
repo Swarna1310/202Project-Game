@@ -37,3 +37,14 @@ for use with Java.
 
 Looked at existing sample games developed on Greenfoot from various sources on the internet. 
 Game development on greenfoot seems to be very intuitive. It also looks fairly easy to use.
+
+##Research on Leap API & JavaFX(Issue 11)
+The Leap Motion API follows a simple architecture design. It is based on a listener
+design pattern where methods are called when certain actions are performed on the Leap Motion
+device, similar to mouse listeners. The most important Leap Motion listener method in our
+application is the onFrame() method, though there are several other methods provided by the
+Leap Listener class. The onFrame() method has access to the current frame application data such
+as hand positions, finger positions, and gestures being performed. Leap Motion API has built in
+functionality for certain gestures, returning a list of any recognized gestures on a given
+onFrame(). The commonly used gestures that Leap supports are swipes, taps, and circle gestures.
+This data is then handed off to the JavaFX threads for the interface to “react” to.
