@@ -1,5 +1,5 @@
 
-Design patterns
+Design patterns used
 
 Swarna ­ Command 
 
