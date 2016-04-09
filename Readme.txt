@@ -4,7 +4,7 @@ https://github.com/Swarna1310/202Project­Game
 
 waffle io board link :
 
-https://waffle.io/Swarna1310/202Project­Game
+https://waffle.io/Swarna1310/202Project-Game
 
 Design patterns
 
