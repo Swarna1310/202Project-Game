@@ -7,7 +7,7 @@ Sneha ­ Observer
 
 Roshni ­ Factory / Abstract Factory
 
-Shubhra ­ Strategy Pattern/State pattern
+Shubhra ­ State pattern
 
 Aditya­  decorator
 
