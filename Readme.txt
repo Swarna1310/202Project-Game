@@ -11,6 +11,8 @@ Shubhra ­ Strategy Pattern/State pattern
 
 Aditya­  decorator
 
+
+
 XP values
 
 Swarna ­ Communication
@@ -22,6 +24,8 @@ Roshni ­ Feedback
 Shubhra­ Respect
 
 Aditya­ Courage
+
+
 
 ## Research on Kinect API and Greenfoot platforms for Game development (Issue 2)
 There are a number of kinect APIs available for game development in many languages.
