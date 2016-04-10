@@ -27,13 +27,16 @@ Aditya­ Courage
 
 
 
-## Research on Kinect API and Greenfoot platforms for Game development (Issue 2)
+## Research on Kinect API and Greenfoot platforms for Game development (Issue 2) #Roshni
 There are a number of kinect APIs available for game development in many languages.
 The J4K Library created at the University of Florida seems to be a great library available
 for use with Java.
 
 Looked at existing sample games developed on Greenfoot from various sources on the internet. 
 Game development on greenfoot seems to be very intuitive. It also looks fairly easy to use.
+
+## Research on J4k Library (Issue 5) #Roshni
+The J4K library is an open source Java library that is compatible with all kinect devices. It implements a Java binding (wrapper) for the Microsoft's Kinect SDK. It can be used to create Java applications that use the Kinect sensor. The J4K Library provides various class APIs to handle different kinds of interactions with the Kinect. The J4KSDK class for example implements a Java binding for the Kinect SDK that handles the video, depth and skeleton streams of the kinect using Java Native Interface. The depthmap class converts depth frames from kinect sensor into a 3D object. The Skeleton class offers APIs to convert the skeleton data frames received by the sensor intoa skeleton object that can be rendered in OpenGL as a stick figure. TheVideoframe class offers APIs to convert video frames received by the kinect into an OpenGL texture.  
 
 ##Research on Leap API & JavaFX(Issue 11)
 The Leap Motion API follows a simple architecture design. It is based on a listener
