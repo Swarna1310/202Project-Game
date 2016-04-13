@@ -92,3 +92,18 @@ Cocos2D is great tool for building 2D games and is available as open source. It 
 Unity is great tool using which 3D games can be easily built. It has powerful and good built-in libraries that help to develop interactive, complex and games with advanced features like gesture recognition. It is not very typical to learn and thus is great tool for making games of any kind and complexity. Some egs are Alto's Advanture, FireWatch.
 
 Unreal Engine is another great tool for building awesome 3D games. It has features like 3D modelling, landscape systems and much more. It helps to make professional and sophisticated games. Because of its many features, it is little difficult to learn as compared with Unity and also requires expertise in coding. Games like Tekken 7, Daylight are build using it.
+
+
+Three.js (Aditya)
+
+Three.js is a cross-browser JavaScript library which is used to create 3D graphics in web browser and display them. The source code is hosted on Github.
+
+Three.js allows the creation of GPU-accelerated 3D animations using Javascript instead of relying on browser plugins. This is possible as with as Three.js uses WebGL.
+
+With three.js, it is easier to write graphical items than it would be using raw JavaScript in conjuction with OpenGL libraries.
+
+Three includes a variety of features such as visual effects, scenes, shaders and objects.
+
+WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D computer graphics and 2D graphics within any compatible web browser without the use of plug-ins.
+
+WebGL is widely supported in modern browsers. However its availability is dependent on other factors like the GPU supporting it. 
