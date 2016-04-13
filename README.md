@@ -78,3 +78,17 @@ Possible to extend functionality to any blueprint through adding the LeapInterfa
 ###Research on Unity (Shubhra)
 Unity is a great game engine to develop online video games, games for mobile devices and desktop. It targets the APIS on different platforms like Windows, Mac, Android, XBox 360 and help to develop portable games that work pretty well on different platforms. It has features like texture compression, bump-mapping, parallax mapping, dynamic shadows, screen space ambient occlusion, render-to-texture effects that facilitate development of eye-catchy, attractive, complex an luring gaming applications. Unity has great feature for becoming a convenient, powerful, flexible game engine.  
 
+###Research on Game Tools (Shubhra)
+Game tool is a software application that facilitates development of video games. These tools have specialized features to support making of 2D, 3d games and games working gestures and all.
+
+Different Types of Games Tool:
+
+Stencyl is a game tool that allows making games with simple drag-and-drop operations. Game development is very easy, simple and fast with it. Games are developed by just arranging blocks of code. Sprite-based games can be easily made on it that run efficiently on different platforms. But complex, advanced Game deveopment is not possible with Stencyl. Eg Zuki quest, Impossible Pixel
+
+GameMaker is another easy tool for developing game by drag-and-drop. It also has features for making multiplayer games, linking with external SDKs and digging into the code. It is versatile and has great features to develop different types of games but also lacks facility to build 2D and 3D games. Some famous games are Hotline Miami, Spelunky
+
+Cocos2D is great tool for building 2D games and is available as open source. It has special features for developing games and very easy to work with. It comes with a complete IDE for developing games.The problem with Cocos2D is that you require expertise in c++ before starting development on Cocos2D. Popular Game Badland is developed using it.
+
+Unity is great tool using which 3D games can be easily built. It has powerful and good built-in libraries that help to develop interactive, complex and games with advanced features like gesture recognition. It is not very typical to learn and thus is great tool for making games of any kind and complexity. Some egs are Alto's Advanture, FireWatch.
+
+Unreal Engine is another great tool for building awesome 3D games. It has features like 3D modelling, landscape systems and much more. It helps to make professional and sophisticated games. Because of its many features, it is little difficult to learn as compared with Unity and also requires expertise in coding. Games like Tekken 7, Daylight are build using it.
