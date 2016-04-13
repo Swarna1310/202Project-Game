@@ -1,4 +1,13 @@
 
+TEAM 9
+
+Members :-  Roshni Kailash
+            Sneha Ilangovan
+            Shubhra Gupta
+            Swarna Viswanathan
+            Aditya Veda
+            
+            
 Design patterns used
 
 Swarna ­ Command 
@@ -66,6 +75,6 @@ An event-driven Leap Motion plugin for the Unreal Engine 4.
 We can use convenience blueprints to just select and play or use a custom approach via blueprints or C++.
 Possible to extend functionality to any blueprint through adding the LeapInterfaceEvent interface then adding the LeapController component to that blueprint. This same architecture is available to C++, which also supports both event-driven and polling style use.
 
-###Research on Unity
+###Research on Unity (Shubhra)
 Unity is a great game engine to develop online video games, games for mobile devices and desktop. It targets the APIS on different platforms like Windows, Mac, Android, XBox 360 and help to develop portable games that work pretty well on different platforms. It has features like texture compression, bump-mapping, parallax mapping, dynamic shadows, screen space ambient occlusion, render-to-texture effects that facilitate development of eye-catchy, attractive, complex an luring gaming applications. Unity has great feature for becoming a convenient, powerful, flexible game engine.  
 
