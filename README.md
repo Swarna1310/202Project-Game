@@ -55,6 +55,25 @@ sensor into a 3D object. The Skeleton class offers APIs to convert the skeleton 
 received by the sensor intoa skeleton object that can be rendered in OpenGL as a stick figure. 
 TheVideoframe class offers APIs to convert video frames received by the kinect into an OpenGL texture.  
 
+## Researching on design patterns that can be applied for implementing various features of the game (Roshni, Issue 13)
+As per the GoF an Abstract factory pattern provides an interface for creating 
+families of related objects without specifying their concrete classes.This has 
+great applications in many domains including game design. Let us suppose I am 
+creating a game like the famous "Need for speed". The game allows us to select 
+various themes for game play. I could for example select a "rainy day" theme 
+for one game and select a "sunny day" theme for a different game. To represent a 
+"rainy day" I will need a cloudy sky, a wet road and rain drops all over my screen. 
+However, to represent a "sunny day" I will need a clear sky, dry road and a clear, bright screen.
+The sky, road and screen are a family of related objects that I could bundle together.
+So in this game design, I will end up having something like iGameTheme interface. The RainyTheme and SunnyTheme 
+classes will implement the iGameTheme interface to create concrete products sky, road and screen.
+This way when the concrete factories ("rainy day factory" or "sunny day factory") are passed as parameters to the 
+game the corresponding road, sky and screen are generated in the game. This way I can have many more
+concrete factories implementing the abstract factory iGameTheme to have numerous themes for the
+game each generating a unique road, sky and screen specific to the theme I want.
+
+
+
 ##Research on Leap API & JavaFX(Issue 11)
 The Leap Motion API follows a simple architecture design. It is based on a listener
 design pattern where methods are called when certain actions are performed on the Leap Motion
