@@ -13,6 +13,10 @@ public class MenuOption extends Actor {
 
 
     }
+  public void setCommand(ICommand command) {
+        this.command = command;
+    }
+
 
     @Override
     public void act() {
@@ -23,8 +27,5 @@ public class MenuOption extends Actor {
         }
     }
 
-    public void setCommand(ICommand command) {
-        this.command = command;
-    }
-
+  
 }
