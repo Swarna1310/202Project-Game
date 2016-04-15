@@ -6,5 +6,5 @@
  */
 public interface MessageSubject
 {
-   public void notify();
+   public void notify(int score, Game g);
 }
