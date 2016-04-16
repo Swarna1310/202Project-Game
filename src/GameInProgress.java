@@ -1,12 +1,8 @@
 
-public class GameInProgress implements GameStatus{
-	
-	Game game;
+public class GameInProgress extends GameState{
 
-	@Override
-	public void startGame() {
-		// TODO Auto-generated method stub
-		
+	GameInProgress(){
+		super();
 	}
 
 	@Override

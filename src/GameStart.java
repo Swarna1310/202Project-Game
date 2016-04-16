@@ -1,12 +1,8 @@
 
-public class GameStart implements GameStatus{
+public class GameStart extends GameState{
 	
-	Game game;
-
-	@Override
-	public void startGame() {
-		// TODO Auto-generated method stub
-		
+	GameStart(){
+		super();
 	}
 
 	@Override
