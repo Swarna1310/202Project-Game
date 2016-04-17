@@ -56,8 +56,10 @@ public class Apple extends Fruit implements Component
            getWorld().removeObject(this);
         }   
     }
-   
- 
+public void bonusApple(FruitNinja Fn)
+{
+//Greenfoot.playSound("bonus.mp3");   
+ }
     /**
      * Pop this apple.
      */
@@ -72,3 +74,9 @@ public class Apple extends Fruit implements Component
         //fn.removeObject(this);
     }
 }
+
+public void BonusPoints()
+{
+// code for bonus points by implementing decorator here
+}
+

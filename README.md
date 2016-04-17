@@ -126,3 +126,4 @@ Three includes a variety of features such as visual effects, scenes, shaders and
 WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D computer graphics and 2D graphics within any compatible web browser without the use of plug-ins.
 
 WebGL is widely supported in modern browsers. However its availability is dependent on other factors like the GPU supporting it. 
+
