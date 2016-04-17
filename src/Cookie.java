@@ -1,6 +1,6 @@
 import greenfoot.*;  
 
-public class Cookie extends Food
+public class Cookie extends Food implements Display 
 {
     
     Cookie()

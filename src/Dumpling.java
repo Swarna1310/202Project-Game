@@ -1,6 +1,6 @@
 import greenfoot.*;  
 
-public class Dumpling extends Food
+public class Dumpling extends Food implements Display
 {
     
     Dumpling()

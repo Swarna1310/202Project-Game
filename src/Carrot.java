@@ -1,6 +1,6 @@
 import greenfoot.*;  
 
-public class Carrot extends Food
+public class Carrot extends Food implements Display
 {
     
     Carrot()
