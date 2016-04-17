@@ -1,4 +1,4 @@
-import com.IStrategy;
+import com.IGameStrategy;
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -14,7 +14,7 @@ public class GamePlay extends World {
     }
 
 
-    private IStrategy strategy;
+    private IGameStrategy strategy;
 
     public void setStrategy(IStrategy strategy) {
         this.strategy = strategy;
