@@ -1,8 +1,8 @@
 
 public class GameInProgress extends GameState{
 
-	GameInProgress(){
-		super();
+	GameInProgress(Game game){
+		super(game);
 	}
 
 	@Override

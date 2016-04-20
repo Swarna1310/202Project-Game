@@ -2,14 +2,15 @@
 public class Game {
 
 	GameStatus status;
-	GameStart startstate;
-	GameInProgress progressState;
-	GameStop stopstate;
+	GameStatus startstate;
+	GameStatus progressState;
+	GameStatus stopstate;
 	
 	Game(){
-		startstate = new GameStart();
-		progressState = new GameInProgress();
-		stopstate = new GameStop();
+		
+		startstate = new GameStart(this);
+		progressState = new GameInProgress(this);
+		stopstate = new GameStop(this);
 		status = stopstate;
 	}
 	

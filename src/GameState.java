@@ -2,6 +2,10 @@
 public class GameState implements GameStatus{
 	
 	Game game;
+	
+	GameState(Game game){
+		this.game = game;
+	}
 
 	@Override
 	public void startGame() {

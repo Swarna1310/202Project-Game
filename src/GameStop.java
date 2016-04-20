@@ -1,8 +1,8 @@
 
 public class GameStop extends GameState{
 	
-	GameStop(){
-		super();
+	GameStop(Game game){
+		super(game);
 	}
 
 	@Override
