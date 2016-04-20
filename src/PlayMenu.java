@@ -4,28 +4,28 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class HelpMenu extends Actor implements Command
 {
     
-	private Help select = null;
+	private Play select = null;
  
     public void act() 
     {
         // Add your action code here.
     }    
-    public HelpMenu()
+    public PlayMenu()
     {
     }
-    public HelpMenu(Help select) {
+    public PlayMenu(Play select) {
 		this.select = select;
 		
 	}
 	
-	public Help getChoice() {
+	public Play getChoice() {
 		return select;
 	}
 
 	public void setChoice(BonusType select) {
 		this.select = select;
 	}
-    public void call(HelpMenu b, Game fn)
+    public void call(PlayMenu b, Game fn)
     {
      GreenfootImage img = b.getImage();
      String Helpcommand = img.toString();
@@ -38,13 +38,5 @@ public class HelpMenu extends Actor implements Command
      Options.execute();
      }
     }
-  public void execute(Game fn )
- {
-   GreenfootImage img = b.getImage();
-     String Play = img.toString();
-     if(Helpcommand.contains(“Play”))
-     {
-        play.execute();
-     }
- }
+
 }
