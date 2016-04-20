@@ -72,7 +72,9 @@ game the corresponding road, sky and screen are generated in the game. This way 
 concrete factories implementing the abstract factory iGameTheme to have numerous themes for the
 game each generating a unique road, sky and screen specific to the theme I want.
 
-
+The Factory method also known as a virtual constructor can be used extensively in game development. It defines an 
+interface for creating an object but leaves choice of it's type to the subclasses. For example in a war game we could
+have a Enemy Factory class that generates a new enemy dynamically at runtime. It would use an abstract enemy class and various concrete enemy classes that extend from the abstract enemy class. The specific enemy can then be dynamically generated from within the game using the enemy factory. This way the factory method lets a class defer the instantiation to the subclass dynamically as needed.
 
 ##Research on Leap API & JavaFX(Issue 11)
 The Leap Motion API follows a simple architecture design. It is based on a listener
