@@ -3,8 +3,8 @@ public class GameState implements GameStatus{
 	
 	Game game;
 	
-	GameState(Game game){
-		this.game = game;
+	GameState(){
+		this.game = Game.getGameInstance();
 	}
 
 	@Override

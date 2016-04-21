@@ -1,14 +1,14 @@
 
 public class GameStop extends GameState{
 	
-	GameStop(Game game){
-		super(game);
+	GameStop(){
+		super();
 	}
 
 	@Override
 	public void startGame() {
 		// TODO Auto-generated method stub
-		
+		game.setState(game.startstate);
 	}
 
 }

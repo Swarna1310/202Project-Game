@@ -6,12 +6,20 @@ public class Game {
 	GameStatus progressState;
 	GameStatus stopstate;
 	
-	Game(){
+	public static Game game;
+	
+	private Game(){
 		
-		startstate = new GameStart(this);
-		progressState = new GameInProgress(this);
-		stopstate = new GameStop(this);
+		startstate = new GameStart();
+		progressState = new GameInProgress();
+		stopstate = new GameStop();
 		status = stopstate;
+	}
+	
+	public static Game getGameInstance(){
+		if(game == null)
+			game = new Game();
+		return game;
 	}
 	
 	public void setState(GameStatus status){

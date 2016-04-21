@@ -1,8 +1,8 @@
 
 public class GameStart extends GameState{
 	
-	GameStart(Game game){
-		super(game);
+	GameStart(){
+		super();
 	}
 
 	@Override
