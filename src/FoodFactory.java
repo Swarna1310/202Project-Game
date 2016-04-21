@@ -18,6 +18,9 @@ public class FoodFactory extends Actor
             case NOODLES:
                 food = new Noodles();
                 break;
+	    case BAMBOO:
+                food = new Bamboo();
+                break;
         }
         return food;
     }

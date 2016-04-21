@@ -10,5 +10,17 @@ public class Noodles extends Food implements Display
     
     public void act() 
     {
+     objectpath();
+    }  
+		
+    public void objectpath()
+    {
+
+    }
+    
+    public void eat()
+    {
+     GreenfootImage noodles = new GreenfootImage("noodles.png");
+     setImage(noodles);
     }   
 }

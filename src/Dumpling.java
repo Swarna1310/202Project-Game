@@ -10,5 +10,17 @@ public class Dumpling extends Food implements Display
     
     public void act() 
     {
+     objectpath();
+    }  
+		
+    public void objectpath()
+    {
+
+    }
+    
+    public void eat()
+    {
+     GreenfootImage dumpling = new GreenfootImage("dumpling.png");
+     setImage(dumpling);
     }   
 }

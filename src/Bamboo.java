@@ -1,11 +1,11 @@
 import greenfoot.*;  
 
-public class Carrot extends Food implements Display
+public class Bamboo extends Food implements Display
 {
     
-    Carrot()
+    Bamboo()
     {
-     super(FoodType.CARROT);
+     super(FoodType.Bamboo);
     }
     
     public void act() 
@@ -20,7 +20,7 @@ public class Carrot extends Food implements Display
     
     public void eat()
     {
-     GreenfootImage carrot= new GreenfootImage("carrot.png");
-     setImage(carrot);
+     GreenfootImage bamboo = new GreenfootImage("bamboo.png");
+     setImage(bamboo);
     }
 }
