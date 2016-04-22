@@ -38,5 +38,10 @@ public class HelpMenu extends Actor implements Command
      Options.execute();
      }
     }
+   public void execute()
+   {
+     setImage("images/btn_" + name.toLowerCase() + ".png");
+     Main.play();
+   }	 
 
 }
