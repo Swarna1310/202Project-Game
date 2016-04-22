@@ -210,5 +210,85 @@ public abstract class KinectWorld extends World
         else
             return kinect.getThumbnail();
     }
+/**
+     * Gets an image featuring a cut-out of all the users in the scene.
+     *
+     * Technically, it gets an image the same size as getThumbnail(), but all the pixels
+     * that are not taken up by a user are set to transparent.  This therefore
+     * gives you a cut-out view of the users, with all the background removed.
+     * If you want the cut-out for an individual user, use the
+     * getImage()/getImageX()/getImageY() methods of UserData.
+     *
+     * This may be null if isConnected() is false.  
+     */
+    public GreenfootImage getCombinedUserImage()
+    {
+        if (kinect == null)
+            return null;
+        else
+        {
+            GreenfootImage img = kinect.getCombinedUserImage();
+            if (img != null)
+                img.scale((int)(scale * img.getWidth()), (int)(scale * img.getHeight()));
+            return img;
+        }
+    }
+
+    /**
+     * Gets the depth value at a given location in the world.  The number should
+     * be between 0 and getMaxDepth(), inclusive.
+     *
+     * The coordinates are treated as scaled, so if you passed 1.5f as the scale
+     * parameter to get a 960 by 720 world, you can pass 480, 360 to get the depth
+     * value at the centre of the world (the scaling is done using nearest neighbour).
+     * 
+     * Note that the because of the way that the depth view must be adjusted
+     * to match the RGB view (if you run the KinectServer in normal, matched mode),
+     * there will probably not be depth information available for the very edges
+     * of the world.
+     *
+     * If depth is disabled, the coordinates are out of bounds, or isConnected() is false, this method will return zero.
+     */
+    public short getDepthAt(int x, int y)
+    {
+        if (kinect == null)
+            return 0;
+
+        short[] depthArray = kinect.getRawDepth();
+        if (depthArray == null)
+            return 0;
+
+        int sy = (int)((double)y / scale);
+        int sx = (int)((double)x / scale);
+        int i = sy * 640 + sx;
+        if (x < 0 || y < 0 || x >= getWidth() || y >= getHeight() || i < 0 || i >= depthArray.length)
+            return 0;
+        return depthArray[i];
+    }
+
+    /**
+     * Gets the maximum depth value.
+     *
+     * This is 0 if there is a problem, or if act() has not been called yet.
+     * So do not call this method before act() may have been called
+     * (e.g. in an actor's constructor) as the result will be zero.
+     */
+    public short getMaxDepth()
+    {
+        if (kinect == null)
+            return 0;
+        else
+            return kinect.getMaxDepth();
+    }
     
+    /**
+     * Disconnects from the KinectServer.
+     */
+    protected void disconnect()
+    {
+        kinect.disconnect();
+    }
+}
+    
+
     
