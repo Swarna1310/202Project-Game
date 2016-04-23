@@ -8,13 +8,13 @@ public class GameInProgress extends GameState{
 	@Override
 	public void stopGame() {
 		// TODO Auto-generated method stub
-		
+		game.setState(game.stopstate);
 	}
 
 	@Override
 	public void pauseGame() {
 		// TODO Auto-generated method stub
-		
+		game.setState(game.progressState);
 	}
 
 }

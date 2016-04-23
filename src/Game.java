@@ -5,6 +5,7 @@ public class Game {
 	GameStatus startstate;
 	GameStatus progressState;
 	GameStatus stopstate;
+	Panda panda;
 	
 	public static Game game;
 	
@@ -22,7 +23,10 @@ public class Game {
 		return game;
 	}
 	
-	public void setState(GameStatus status){
-		this.status = status;
+	public void setState(GameStatus state){
+		this.status = state;
+		if(status == startstate){
+			panda = new Panda();
+		}
 	}
 }
