@@ -6,11 +6,13 @@ public class Game {
 	GameStatus progressState;
 	GameStatus stopstate;
 	Panda panda;
+	Sound sound;
 	
 	public static Game game;
 	
 	private Game(){
 		
+		sound = new Sound();
 		startstate = new GameStart();
 		progressState = new GameInProgress();
 		stopstate = new GameStop();
