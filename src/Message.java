@@ -21,5 +21,21 @@ public class Message extends Actor implements MessageObserver
          msg=" You are a CHEF!!!! ";
          sh.display(msg,fw);
         }
+         else if(score>=750 && score<=800){
+         msg=" you are a BUTCHER!! ";
+         sh.display(msg,fw);
+        }
+        else if(score>=1000 && score<=1050){
+         msg=" You are a NINJA!!!! ";
+         sh.display(msg,fw);
+        }
+        else if(score>=1250 && score<=1300){
+         msg=" You are a SAMURAI!! ";
+         sh.display(msg,fw);
+        }
+        else if(score>=1500 && score<=1550){
+         msg=" PLEASE!! Leave Some FRUITS For OTHERS !! ";
+         sh.display(msg,fw);
+        }
         }
         }
