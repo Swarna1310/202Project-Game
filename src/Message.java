@@ -14,15 +14,15 @@ public class Message extends Actor implements MessageObserver
     
      Show sh = new Show();
         if(score>=250 && score<=300){
-         msg=" You are a CUTTER!! ";
+         msg=" You got the noodles!! ";
          sh.display(msg,fw);
         }
         else if(score>=500 && score<=550){
-         msg=" You are a CHEF!!!! ";
+         msg=" You got the dumplings!!!! ";
          sh.display(msg,fw);
         }
          else if(score>=750 && score<=800){
-         msg=" you are a BUTCHER!! ";
+         msg=" you got the bamboo!! ";
          sh.display(msg,fw);
         }
         else if(score>=1000 && score<=1050){
@@ -34,7 +34,7 @@ public class Message extends Actor implements MessageObserver
          sh.display(msg,fw);
         }
         else if(score>=1500 && score<=1550){
-         msg=" PLEASE!! Leave Some FRUITS For OTHERS !! ";
+         msg=" PLEASE!! Leave Some dumplings For OTHERS !! ";
          sh.display(msg,fw);
         }
         }
