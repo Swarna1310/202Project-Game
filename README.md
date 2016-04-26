@@ -76,7 +76,32 @@ The Factory method also known as a virtual constructor can be used extensively i
 interface for creating an object but leaves choice of it's type to the subclasses. For example in a war game we could
 have a Enemy Factory class that generates a new enemy dynamically at runtime. It would use an abstract enemy class and various concrete enemy classes that extend from the abstract enemy class. The specific enemy can then be dynamically generated from within the game using the enemy factory. This way the factory method lets a class defer the instantiation to the subclass dynamically as needed.
 
-##Research on Leap API & JavaFX(Issue 11)
+## Test how kinect motion sensor works with real examples (Roshni - Issue 28)
+### Greenfoot Kinect software installation
+#### Step 1:
+I installed greenfoot kinect software on a Macbook. I needed to install xcode first. I got my developer license from http://developer.apple.com/xcode/ 
+#### Step 2:
+I installed mac ports on my macbook to install OpenNI and Greenfoot Kinect Server software
+#### Step 3:
+I followed the instructions on greenfoot.org to install the required libraries.
+```
+sudo /opt/local/bin/port -v selfupdate
+sudo /opt/local/bin/port install libtool
+sudo /opt/local/bin/port install libusb-devel +universal
+sudo /opt/local/bin/port install boost
+sudo /opt/local/bin/port install wxWidgets-3.0
+// The wxWidgets-devel packagecould not be found using macports
+```
+#### Step 4:
+Once the pre-requisites have been installed I installed OpenNI, KinectDriver and NITE middleware. (License key for nite: 0KOIk2JeIBYClPWVnMoRKn5cdY4) 
+#### Step 5:
+I performed basic OpenNI installation testing using the pre-shipped Sample-NiSimpleViewer example that is part of OpenNI installation.
+#### Step 6:
+With the basic software working I needed the Greenfoot Kinect Server to use my kinect sensor within the greenfoot environment. I downloaded the server from http://www.greenfoot.org/doc/kinect/kinectserver-1.2.tar.gz and then built the code and installed it from the source. The kinect server for Greenfoot got successfully installed.
+#### Step 7:
+I then ran a sample scenario (available on greenfoot website) for painting on a white canvas using human arm motions. I was successfully able to paint using my hands using Kinect on Greenfoot.
+
+## Research on Leap API & JavaFX(Issue 11)
 The Leap Motion API follows a simple architecture design. It is based on a listener
 design pattern where methods are called when certain actions are performed on the Leap Motion
 device, similar to mouse listeners. The most important Leap Motion listener method in our
