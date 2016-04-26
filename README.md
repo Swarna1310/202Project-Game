@@ -140,7 +140,7 @@ Unity is great tool using which 3D games can be easily built. It has powerful an
 Unreal Engine is another great tool for building awesome 3D games. It has features like 3D modelling, landscape systems and much more. It helps to make professional and sophisticated games. Because of its many features, it is little difficult to learn as compared with Unity and also requires expertise in coding. Games like Tekken 7, Daylight are build using it.
 
 
-Game Development Using Kinect
+Using Kinect For Game Development
 
 Kinect is among the motion sensing input devices by Microsoft for Xbox 360 video games. It enables user to control and interact with game through natural human gestures and spoken commands through a web-cam like peripheral device. 
 
@@ -150,7 +150,7 @@ Kinect has features to capture 3D motion, recognize face features and voice comm
 
 Kinect device is black box with a camera and sensor port in the front balanced on a small tilted motorized platform to have better of players physical movements. This motorized tilt requires more power than that can be supplied by a normal USB port, kinect device is generally with additional power adaptor. For development purposes, kinect connecting cable is required that can connect kinect sensor with the PC.
 
-Benefits of using Kinect for Game development
+Benefits of using Kinect for Game Development
 
 As per Microsoft, kinect provides with great features that make it a desirable tool for making interactive games.
 
