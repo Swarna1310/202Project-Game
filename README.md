@@ -127,7 +127,7 @@ Unity is a great game engine to develop online video games, games for mobile dev
 ###Research on Game Tools (Shubhra)
 Game tool is a software application that facilitates development of video games. These tools have specialized features to support making of 2D, 3d games and games working gestures and all.
 
-Different Types of Games Tool:
+#####Different Types of Games Tool:
 
 Stencyl is a game tool that allows making games with simple drag-and-drop operations. Game development is very easy, simple and fast with it. Games are developed by just arranging blocks of code. Sprite-based games can be easily made on it that run efficiently on different platforms. But complex, advanced Game deveopment is not possible with Stencyl. Eg Zuki quest, Impossible Pixel
 
@@ -150,7 +150,7 @@ Kinect has features to capture 3D motion, recognize face features and voice comm
 
 Kinect device is black box with a camera and sensor port in the front balanced on a small tilted motorized platform to have better of players physical movements. This motorized tilt requires more power than that can be supplied by a normal USB port, kinect device is generally with additional power adaptor. For development purposes, kinect connecting cable is required that can connect kinect sensor with the PC.
 
-Benefits of using Kinect for Game Development
+#####Benefits of using Kinect for Game Development
 
 As per Microsoft, kinect provides with great features that make it a desirable tool for making interactive games.
 
