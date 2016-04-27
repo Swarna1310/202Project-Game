@@ -127,7 +127,7 @@ Unity is a great game engine to develop online video games, games for mobile dev
 ###Research on Game Tools (Shubhra)
 Game tool is a software application that facilitates development of video games. These tools have specialized features to support making of 2D, 3d games and games working gestures and all.
 
-Different Types of Games Tool:
+#####Different Types of Games Tool:
 
 Stencyl is a game tool that allows making games with simple drag-and-drop operations. Game development is very easy, simple and fast with it. Games are developed by just arranging blocks of code. Sprite-based games can be easily made on it that run efficiently on different platforms. But complex, advanced Game deveopment is not possible with Stencyl. Eg Zuki quest, Impossible Pixel
 
@@ -138,6 +138,32 @@ Cocos2D is great tool for building 2D games and is available as open source. It 
 Unity is great tool using which 3D games can be easily built. It has powerful and good built-in libraries that help to develop interactive, complex and games with advanced features like gesture recognition. It is not very typical to learn and thus is great tool for making games of any kind and complexity. Some egs are Alto's Advanture, FireWatch.
 
 Unreal Engine is another great tool for building awesome 3D games. It has features like 3D modelling, landscape systems and much more. It helps to make professional and sophisticated games. Because of its many features, it is little difficult to learn as compared with Unity and also requires expertise in coding. Games like Tekken 7, Daylight are build using it.
+
+
+###Using Kinect For Game Development (Shubhra)
+
+Kinect is among the motion sensing input devices by Microsoft for Xbox 360 video games. It enables user to control and interact with game through natural human gestures and spoken commands through a web-cam like peripheral device. 
+
+Microsoft Game Studios developed the software technology used in kinect and launched it with Xbox to give a rich, interactive and more real experience of the games in Xbox. The camera technology in kinect is developed by PrimeSense that can interprect gestures through an infrared projectors and special chip to track movement of objects in front of it in 3 dimensions. 
+
+Kinect has features to capture 3D motion, recognize face features and voice commands. Kinect is capable to automatically adjust its sensor based on person's physical movements and game environment and smart enough to ignore obstacles like furniture and other objects that are not involved in game. Kinect can detect and track movements of 6 people, with 2 active palyers. Ideally kinect can track as many people as are in view of kinect camera.
+
+Kinect device is black box with a camera and sensor port in the front balanced on a small tilted motorized platform to have better of players physical movements. This motorized tilt requires more power than that can be supplied by a normal USB port, kinect device is generally with additional power adaptor. For development purposes, kinect connecting cable is required that can connect kinect sensor with the PC.
+
+#####Benefits of using Kinect for Game Development
+
+As per Microsoft, kinect provides with great features that make it a desirable tool for making interactive games.
+
+Kinect has ability to track to track 6 people and 25 skeletal joints per person- including joints for hand tips, thumbs, and shoulder center. It has great understanding of the soft connective tissue and body positioning which help to develop avatars that are lifelike.
+
+Kinect also provides Visual Gesture Builder that facilitate development of custom gestures recognised by system. It also enables writing of improved codes using machine learning on current gesture inputs.
+
+Kinect can create a mesh of more than 1,000 points on a human face and making a person feel that he is actually inside the game as he can view a avatar quite similar to him on the game screen.
+
+Kinect also has multi-app support enabling multiple applications to use a single sensor simultaneously.
+
+We also want to make a game that is easy to play, simple, short and also make you a part of the game. Kinect has all features for developing such game. Check the fun of playing with kinect https://vimeo.com/34264122
+
 
 
 Three.js (Aditya)
