@@ -6,6 +6,7 @@ public class HungryPo extends World
     Counter counter = new Counter("Score: ");
     static int x=0;
     static int xc=0;
+    //static int sc=0;
     Instructions ins;
     Game game;
     Score s;
@@ -17,6 +18,7 @@ public class HungryPo extends World
     {    
         super(600, 500, 1);
         this.showStartScreen();
+        //Greenfoot.setWorld(this);
     }
                
     public void showStartScreen(){
@@ -35,26 +37,40 @@ public class HungryPo extends World
     
     public void act() 
     {
-       if(game.getReset()==1) 
+       //if(game.getReset()==1) 
+      // Show sh = new Show();
+      //  String msg=" You are ACTING!! ";
+     //    sh.display(msg,this);
+       //shubh test ends
+       
+       
+       if(game.status != game.stopstate) //using states of game
         reset();  
     }
     
     public void reset()
     {
+       //shubh test
+       //Show sh = new Show();
+      //  String msg=" You are a RESETING!! ";
+       //  sh.display(msg,this);
+       //shubh test ends
         if(c==true)
         {
+         
          MouseInfo m = Greenfoot.getMouseInfo();
          if(m != null && Greenfoot.mousePressed(null)) {
             int x = m.getX();
             int y = m.getY();
-            addObject(new Katna(), x, y);
+            addObject(new Panda(), x, y);
             c=false;
         }
     }
         if(z==true){
+          
         if(Greenfoot.getRandomNumber(300) < 3) {
             xc=Greenfoot.getRandomNumber(600);
-            if(xc>=20 && xc<=580)         
+            if(xc>=20 && xc<=580)           // so that fruit does'nt go out of the screen
             {
                 x=Greenfoot.getRandomNumber(6);                 
               switch(x)
@@ -118,7 +134,8 @@ public class HungryPo extends World
         s.setScore(0);
         Greenfoot.playSound("pop.wav");
         Greenfoot.stop();
-        game.setReset(0);
+        //game.setReset(0);
+        game.setState(game.stopstate); //setting game states
     }
 
 
@@ -130,6 +147,13 @@ public class HungryPo extends World
     public void addObjectFromActor(Food f, int a, int b)
     {
         addObject(f,a,b);
+    }
+    
+    
+    /*shubh changing levels*/
+     public void checkBackground(String img)
+    {
+           this.setBackground(img);
     }
     
 }
