@@ -18,6 +18,6 @@ public class DumplingFactory extends FoodFactory
     }    
     
     public Food getFood(){
-        return new Dumpling();
+        return getCorrectFood("Dumpling");
     }
 }
