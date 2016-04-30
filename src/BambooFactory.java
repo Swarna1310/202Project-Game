@@ -17,7 +17,7 @@ public class BambooFactory extends FoodFactory
         // Add your action code here.
     }    
     
-    public Food getFood(){
-        return new Bamboo();
+     public Food getFood(){
+        return getCorrectFood("Bamboo");
     }
 }
