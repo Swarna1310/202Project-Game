@@ -41,7 +41,6 @@ public class HungryPo extends World
       // Show sh = new Show();
       //  String msg=" You are ACTING!! ";
      //    sh.display(msg,this);
-       //shubh test ends
        
        
        if(game.status != game.stopstate) //using states of game
@@ -50,11 +49,11 @@ public class HungryPo extends World
     
     public void reset()
     {
-       //shubh test
+       
        //Show sh = new Show();
       //  String msg=" You are a RESETING!! ";
        //  sh.display(msg,this);
-       //shubh test ends
+      
         if(c==true)
         {
          
@@ -150,7 +149,7 @@ public class HungryPo extends World
     }
     
     
-    /*shubh changing levels*/
+    /*changing levels*/
      public void checkBackground(String img)
     {
            this.setBackground(img);
