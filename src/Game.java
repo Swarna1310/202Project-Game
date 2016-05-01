@@ -15,7 +15,7 @@ public class Game extends Actor
     GameStatus startstate;
     GameStatus progressState;
     GameStatus stopstate;
-	Panda panda;
+	HungryPo world;
 	Sound sound;
     
     public Game ()  {
@@ -39,7 +39,7 @@ public class Game extends Actor
         if (Greenfoot.mousePressed(this)){
             status.startGame();
         setReset(1);
-        HungryPo world=(HungryPo)getWorld();
+        world=(HungryPo)getWorld();
         world.z=true;
         world.removeInstructions();
         world.setPaintOrder(ScoreBoard.class, Katna.class, Carrot.class, Counter.class);
@@ -64,8 +64,10 @@ public class Game extends Actor
    
     public void setState(GameStatus state){
         this.status = state;
-		if(status == startstate){
-			panda = new Panda();
-		}
+		if(status == stopstate){
+                //HungryPo world=(HungryPo)getWorld();
+                world.gameOver();
+                //((HungryPo) getWorld()).gameOver();  
+        }
     }
 }

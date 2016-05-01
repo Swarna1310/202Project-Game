@@ -187,7 +187,7 @@ public class HungryPo extends KinectWorld
         Greenfoot.playSound("pop.wav");
         Greenfoot.stop();
         //game.setReset(0);
-        game.setState(game.stopstate); //setting game states
+        //game.setState(game.stopstate); //setting game states
     }
 
 

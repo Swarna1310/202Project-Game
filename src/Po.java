@@ -61,7 +61,8 @@ public class Po extends Actor implements Subject
                         // fn.populate();
                         // Greenfoot.stop();
                         fn.count(0,fn);
-                        ((HungryPo) getWorld()).gameOver();
+                        //((HungryPo) getWorld()).gameOver();
+						((HungryPo) getWorld()).game.stop();
             }
             }
             }
