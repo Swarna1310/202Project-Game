@@ -18,6 +18,6 @@ public class CookieFactory extends FoodFactory
     }    
     
     public Food getFood(){
-        return getCorrectFood("Cookie");
+        return new Cookie();
     }
 }
