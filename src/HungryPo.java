@@ -1,9 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
-public class HungryPo extends World 
+public class HungryPo extends KinectWorld 
 {
     Counter counter = new Counter("Score: ");
+    private static final int THUMBNAIL_WIDTH = 80;
+    private static final int THUMBNAIL_HEIGHT = 60;
+    
+    private static int xc=0;
+    private static int x=0;
+    private boolean goforit = false;
     static int x=0;
     static int xc=0;
     //static int sc=0;
@@ -16,7 +22,14 @@ public class HungryPo extends World
     Double d;
     public HungryPo()
     {    
-        super(600, 500, 1);
+        super(THUMBNAIL_WIDTH, THUMBNAIL_HEIGHT, 1.0, false);
+
+        final int width = getWidth();
+        final int height = getHeight();
+
+        addObject(new Po(width, height), width/2, height/2);
+        addObject(new Instructions(), width/2, height/2);
+        addObject(new Thumbnail(), width - THUMBNAIL_WIDTH/2, height - THUMBNAIL_HEIGHT/2);
         this.showStartScreen();
         //Greenfoot.setWorld(this);
     }
@@ -35,16 +48,56 @@ public class HungryPo extends World
     }
     
     
-    public void act() 
+    public void act()
     {
-       //if(game.getReset()==1) 
-      // Show sh = new Show();
-      //  String msg=" You are ACTING!! ";
-     //    sh.display(msg,this);
-       
-       
-       if(game.status != game.stopstate) //using states of game
-        reset();  
+        super.act();
+        if (!isConnected())
+            return;
+        
+        UserData[] us = this.getAllUsers();
+        for (UserData u : us)
+        {
+            if(u.isTracking())
+            {
+                goforit = true;
+            }
+
+        }    
+        if(goforit){    
+        if(Greenfoot.getRandomNumber(30) < 3) {
+        xc=Greenfoot.getRandomNumber(600);
+        x=Greenfoot.getRandomNumber(6);
+        switch(x)
+              {
+                case 0:
+                  FoodFactory carrotFactory = new CarrotFactory();
+                  addObject(carrotFactory.getFood(),xc, 100);
+                  break;
+                case 1:
+                  FoodFactory cookieFactory = new CookieFactory();
+                  addObject(cookieFactory.getFood(),xc, 100);
+                  break;
+                case 2:
+                  FoodFactory dumplingFactory = new DumplingFactory();
+                  addObject(dumplingFactory.getFood(),xc, 100);
+                  break;
+                case 3:
+                  FoodFactory bambooFactory = new BambooFactory();
+                  addObject(bambooFactory.getFood(),xc, 100);
+                  break;  
+                case 4:
+                  FoodFactory noodlesFactory = new NoodlesFactory();
+                  addObject(noodlesFactory.getFood(),xc, 100);
+                  break; 
+                case 5:
+                  addObject(new Poison(),xc, 100);
+                  break; 
+                default:
+                  addObject(new Poison(),xc, 100);
+                  break;
+                }
+            }
+        }
     }
     
     public void reset()
