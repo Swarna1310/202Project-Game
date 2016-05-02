@@ -15,6 +15,9 @@ public class HungryPo extends KinectWorld
     //static int sc=0;
     Instructions ins;
     Game game;
+    Panda panda;
+    Logo logo;   
+    Help help; 
     Score s;
     boolean c = true;
     public static boolean z = false;
@@ -26,11 +29,16 @@ public class HungryPo extends KinectWorld
 
         final int width = getWidth();
         final int height = getHeight();
-
+        game = new Game();
+        help = new Help();
+        logo = new Logo(); 
+        panda = new Panda();
         addObject(new Po(width, height), width/2, height/2);
         addObject(new Instructions(), width/2, height/2);
         addObject(new Thumbnail(), width - THUMBNAIL_WIDTH/2, height - THUMBNAIL_HEIGHT/2);
         this.showStartScreen();
+       cmdClient = new CommandActor(game,help);
+        addObject(cmdClient,0,0);
         //Greenfoot.setWorld(this);
     }
                
@@ -38,13 +46,19 @@ public class HungryPo extends KinectWorld
         game = new Game();
         ins = new Instructions();
         addObject(ins,300,250);
-        addObject(game,300,423);
+        addObject(panda,400,209);
+        addObject(logo,400,50);
+        addObject(game,300,400);
+        addObject(help,500,400);
         
     }
     
     public void removeInstructions(){
         this.removeObject(game);
         this.removeObject(ins);
+        this.removeObject(panda);
+        this.removeObject(logo);
+        this.removeObject(help);
     }
     
     
